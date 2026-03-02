@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.EntityFrameworkCore;
-using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Data {
     public class SalesWebMvcContext : DbContext {
@@ -12,5 +8,8 @@ namespace SalesWebMvc.Data {
         }
 
         public DbSet<SalesWebMvc.Models.Department> Department { get; set; } = default!;
+        public DbSet<SalesWebMvc.Models.Seller> Seller { get; set; } = default!;
+        public DbSet<SalesWebMvc.Models.SallesRecord> SallesRecord { get; set; } = default!;
+
     }
 }
