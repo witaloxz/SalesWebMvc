@@ -28,8 +28,8 @@ namespace SalesWebMvc.Data {
             Department d5 = new Department { Id = 5, Name = "Food" };
             Department d6 = new Department { Id = 6, Name = "Health" };
 
-            Seller s1 = new Seller { Id = 1, name = "Bob Brown", email = "bob@gmail.com", BirthDate = new DateTime(2005, 09, 30), BaseSalary = 4000, Department = d1 };
-            Seller s2 = new Seller { Id = 2, name = "Maria Green", email = "maria@gmail.com", BirthDate = new DateTime(2006, 02, 07), BaseSalary = 5000, Department = d3 };
+            Seller s1 = new Seller { Id = 1, Name = "Bob Brown", Email = "bob@gmail.com", BirthDate = new DateTime(2005, 09, 30), BaseSalary = 4000, Department = d1 };
+            Seller s2 = new Seller { Id = 2, Name = "Maria Green", Email = "maria@gmail.com", BirthDate = new DateTime(2006, 02, 07), BaseSalary = 5000, Department = d3 };
 
             SallesRecord r1 = new SallesRecord { Id = 1, Date = new DateTime(2023, 09, 25), Amount = 11000, Status = SaleStatus.BILLED, Seller = s1 };
             SallesRecord r2 = new SallesRecord { Id = 2, Date = new DateTime(2023, 09, 26), Amount = 7000, Status = SaleStatus.BILLED, Seller = s2 };
